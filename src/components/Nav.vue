@@ -4,7 +4,7 @@
       <router-link exact to="/">Home</router-link>
     </li>
     <li>
-      <router-link to="/battle">Battle</router-link>
+      <router-link exact to="/battle">Battle</router-link>
     </li>
     <li>
       <router-link to="/popular">Popular</router-link>
