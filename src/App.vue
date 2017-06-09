@@ -1,23 +1,22 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="container">
+    <app-nav></app-nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Nav from './components/Nav.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    AppNav: Nav
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .container {
+    margin: 0 auto;
+  }
 </style>
